@@ -7,7 +7,7 @@ from gensim import models
 class Embedding:
     def train(
             self, path, sentences, 
-            embeddings_size = 200, window = 5, min_count = 5, sg = 1
+            embeddings_size = 200, window = 5, min_count = 1, sg = 1
         ):
         directory = "/".join(path.split("/")[:-1])
         os.makedirs(directory, exist_ok=True)
@@ -26,4 +26,5 @@ class Embedding:
         self.path = path
         self.model = models.KeyedVectors.load_word2vec_format(self.path, binary = False)
         self.vocab_size = len(self.model)
+        self.embeddings_size = self.model.vector_size
     
