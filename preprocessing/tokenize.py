@@ -48,7 +48,7 @@ class Tokenizer:
             self.tok = AutoTokenizer.from_pretrained(self.tok_model_name)
             self.word_count = data["word_count"]
             self.word_index = data["word_index"]
-            self.index_word = data["index_word"]
+            self.index_word = {int(k) : v for k,v in data["index_word"].items()}
             self.vocab_size = data["vocab_size"]
 
 
