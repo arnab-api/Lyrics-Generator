@@ -1,9 +1,9 @@
 # Data and weight folders with big files
-Data/*
-Weights/*
+*/Data/*
+*/Weights/*
 
 # Jupyter Notebook
-.ipynb_checkpoints
+*.ipynb_checkpoints
 
 # python cache
 *__pycache__*
