@@ -15,6 +15,7 @@ We have trained the RNN, LSTM, and GRU architectures on the task of lyrics gener
 ## Dataset Creation
 
 Instructions to run the code for creating the dataset:
+
 1.) You need to create an account on Genius.com and get an API key in order to run the code.
 
 2.) You need to download the artists dataset from here: https://www.kaggle.com/datasets/pieca111/music-artists-popularity?resource=download
